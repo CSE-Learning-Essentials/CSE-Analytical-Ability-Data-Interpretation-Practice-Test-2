@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Civil Service Exam Practice Test</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+.container {
+    background: #fff;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+h1 {
+    text-align: center;
+}
+.question {
+    margin-bottom: 20px;
+}
+.answers {
+    list-style: none;
+    padding-left: 0;
+}
+.answers li {
+    margin-bottom: 5px;
+}
+.feedback {
+    font-weight: bold;
+    margin-top: 5px;
+}
+.correct {
+    color: green;
+}
+.incorrect {
+    color: red;
+}
+.solution {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #333;
+}
+.score-section {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.submit-btn:hover {
+    background: #45a049;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+<h1>Civil Service Exam Practice Test</h1>
+<p><strong>Created by:</strong> CSE Learning Essentials</p>
+<p><strong>Section 2: Analytical Ability</strong></p>
+<p><strong>Part 6: Data Interpretation</strong></p>
+<p><strong>Practice Test</strong></p>
+<p><strong>Passing Score:</strong> 4</p>
+
+<p><strong>Directions:</strong> Study the given pie graph carefully and answer the questions given below:</p>
+
+<p><strong>Problem:</strong> The Manager of PetroCity Gas Station was tasked to prepare the monthly sales report for July 2025, with a total sales revenue of ₱5,000,000.00. The sales were distributed as follows:</p>
+
+<!-- Insert pie chart image here -->
+        <img src="https://raw.githubusercontent.com/CSE-Learning-Essentials/CSE-Analytical-Ability-Data-Interpretation-Practice-Test-1/main/image/image2.jpg" alt="Pie Chart" width="100%">
+
+<form id="quiz-form">
+    <div class="question">
+        <p>1. Which product category contributed the highest sales?</p>
+        <ul class="answers">
+            <li><label><input type="radio" name="q1" value="A"> A) Diesel</label></li>
+            <li><label><input type="radio" name="q1" value="B"> B) Gasoline (regular)</label></li>
+            <li><label><input type="radio" name="q1" value="C"> C) Gasoline (premium)</label></li>
+            <li><label><input type="radio" name="q1" value="D"> D) Car care products</label></li>
+            <li><label><input type="radio" name="q1" value="E"> E) Lubricants and oils</label></li>
+        </ul>
+        <p id="feedback1" class="feedback"></p>
+        <p id="solution1" class="solution"></p>
+    </div>
+
+    <div class="question">
+        <p>2. The combined sales of diesel and lubricants and oils amounted to:</p>
+        <ul class="answers">
+            <li><label><input type="radio" name="q2" value="A"> A) ₱1,100,000.00</label></li>
+            <li><label><input type="radio" name="q2" value="B"> B) ₱1,000,000.00</label></li>
+            <li><label><input type="radio" name="q2" value="C"> C) ₱1,200,000.00</label></li>
+            <li><label><input type="radio" name="q2" value="D"> D) ₱1,500,000.00</label></li>
+            <li><label><input type="radio" name="q2" value="E"> E) ₱1,300,000.00</label></li>
+        </ul>
+        <p id="feedback2" class="feedback"></p>
+        <p id="solution2" class="solution"></p>
+    </div>
+
+    <div class="question">
+        <p>3. If sales from car care products doubled, what would be their new share of total sales?</p>
+        <ul class="answers">
+            <li><label><input type="radio" name="q3" value="A"> A) ₱100,000.00</label></li>
+            <li><label><input type="radio" name="q3" value="B"> B) ₱300,000.00</label></li>
+            <li><label><input type="radio" name="q3" value="C"> C) ₱400,000.00</label></li>
+            <li><label><input type="radio" name="q3" value="D"> D) ₱450,000.00</label></li>
+            <li><label><input type="radio" name="q3" value="E"> E) ₱500,000.00</label></li>
+        </ul>
+        <p id="feedback3" class="feedback"></p>
+        <p id="solution3" class="solution"></p>
+    </div>
+
+    <div class="question">
+        <p>4. How much more revenue did gasoline (premium) generate compared to diesel?</p>
+        <ul class="answers">
+            <li><label><input type="radio" name="q4" value="A"> A) ₱1,200,000.00</label></li>
+            <li><label><input type="radio" name="q4" value="B"> B) ₱1,000,000.00</label></li>
+            <li><label><input type="radio" name="q4" value="C"> C) ₱900,000.00</label></li>
+            <li><label><input type="radio" name="q4" value="D"> D) ₱500,000.00</label></li>
+            <li><label><input type="radio" name="q4" value="E"> E) ₱250,000.00</label></li>
+        </ul>
+        <p id="feedback4" class="feedback"></p>
+        <p id="solution4" class="solution"></p>
+    </div>
+
+    <div class="question">
+        <p>5. Which two product categories combined came closest to the sales of gasoline (premium)?</p>
+        <ul class="answers">
+            <li><label><input type="radio" name="q5" value="A"> A) Diesel + car care products</label></li>
+            <li><label><input type="radio" name="q5" value="B"> B) Gasoline (regular) + car care products</label></li>
+            <li><label><input type="radio" name="q5" value="C"> C) Diesel + lubricants and oils</label></li>
+            <li><label><input type="radio" name="q5" value="D"> D) Gasoline (regular) + lubricants and oils</label></li>
+            <li><label><input type="radio" name="q5" value="E"> E) Diesel + gasoline (regular)</label></li>
+        </ul>
+        <p id="feedback5" class="feedback"></p>
+        <p id="solution5" class="solution"></p>
+    </div>
+
+    <button type="button" class="submit-btn" onclick="checkAnswers()">Submit</button>
+</form>
+
+<div class="score-section" id="score-section"></div>
+</div>
+
+<div class="social-link">
+  <p>Follow us on <a href="https://www.facebook.com/cselearningessentials/" target="_blank" rel="noopener noreferrer">Facebook</a> for more updates!</p>
+  <p>Subscribe to our YouTube Channel <a href="https://www.youtube.com/@cselearningessentialsph2023" target="_blank" rel="noopener noreferrer">here</a> for more content!</p>
+</div>
+
+<div class="advertisement">
+  <img src="images/advertisement.png" alt="Civil Service E-book" style="width: 100%; max-width: 400px; display: block; margin: 0 auto 15px auto; border-radius: 5px;">
+  <p>Avail our latest Civil Service Exam Reviewer E-book. Direct message us for more details!</p>
+</div>
+
+<script>
+function checkAnswers() {
+    const correctAnswers = {
+        q1: 'C',
+        q2: 'A',
+        q3: 'B',
+        q4: 'A',
+        q5: 'B'
+    };
+
+    const solutions = {
+        q1: 'Gasoline (premium) = 40%, the highest among all categories.',
+        q2: 'Diesel (15%) + Lubricants and oils (7%) = 22% × ₱5,000,000 = ₱1,100,000.',
+        q3: 'Car care products: 3% × ₱5,000,000 = ₱150,000 × 2 = ₱300,000.',
+        q4: 'Gasoline (premium) 40% - Diesel 15% = 25% × ₱5,000,000 = ₱1,250,000, closest is ₱1,200,000.',
+        q5: 'Gasoline (regular) 35% + Car care products 3% = 38% × ₱5,000,000 = ₱1,900,000, closest to premium.'
+    };
+
+    let score = 0;
+
+    for (let i = 1; i <= 5; i++) {
+        const answer = document.querySelector(`input[name="q${i}"]:checked`);
+        const feedback = document.getElementById(`feedback${i}`);
+        const solution = document.getElementById(`solution${i}`);
+        if (answer) {
+            if (answer.value === correctAnswers[`q${i}`]) {
+                feedback.textContent = 'Correct!';
+                feedback.classList.add('correct');
+                feedback.classList.remove('incorrect');
+                score++;
+            } else {
+                feedback.textContent = `Incorrect. The correct answer is ${correctAnswers[`q${i}`]}.`;
+                feedback.classList.add('incorrect');
+                feedback.classList.remove('correct');
+            }
+        } else {
+            feedback.textContent = 'No answer selected.';
+            feedback.classList.remove('correct', 'incorrect');
+        }
+        solution.textContent = `Solution: ${solutions[`q${i}`]}`;
+    }
+
+    const result = score >= 4 ? 'You Passed!' : 'You Failed.';
+    document.getElementById('score-section').textContent = `Your score is ${score}/5. ${result}`;
+}
+</script>
+
+</body>
+</html>
